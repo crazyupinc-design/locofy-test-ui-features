@@ -3,7 +3,7 @@ import styles from "./features-list.module.css";
 const FeaturesList: FunctionComponent = () => {
   return (
     <div className={styles.featuresList}>
-      <div className={styles.columns}>
+      <article className={styles.columns}>
         <div className={styles.column}>
           <div className={styles.content}>
             <div className={styles.intro}>
@@ -40,7 +40,7 @@ const FeaturesList: FunctionComponent = () => {
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   );
 };

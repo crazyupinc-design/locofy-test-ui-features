@@ -67,6 +67,10 @@
 .columns {
   width: 960px;
   gap: var(--gap-61xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
 }
 .featuresList {
   position: relative;
@@ -75,8 +79,14 @@
   overflow: hidden;
   padding: var(--padding-45xl) var(--padding-5xl);
   box-sizing: border-box;
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-black);
-  font-family: var(--font-inter);
+}
+@media screen and (max-width: 690px) {
+  .column,
+  .column1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .columns {
+    flex-direction: column;
+  }
 }
